@@ -1,0 +1,10 @@
+{
+  "name": "Hệ thống xét tuyển Trường Cao đẳng Công nghiệp quốc phòng",
+  "description": "Hệ thống quản lý xét tuyển chính quy cho Trường Cao đẳng Công nghiệp quốc phòng, hỗ trợ bảo mật dữ liệu AES-256.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

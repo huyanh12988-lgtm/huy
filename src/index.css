@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #B91C1C; /* Deep Red */
+  --color-secondary: #EAB308; /* Official Gold */
+  --font-sans: "Inter", "Segoe UI", Roboto, sans-serif;
+  
+  --shadow-3d: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.23);
+  --shadow-3d-active: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+@utility btn-3d {
+  @apply relative transition-all duration-200 active:scale-95 active:translate-y-1 shadow-lg hover:shadow-xl active:shadow-sm;
+}
+
+@utility glass-official {
+  @apply bg-white/90 backdrop-blur-md border border-white/20 shadow-2xl;
+}
+
+@utility red-gold-gradient {
+  background: linear-gradient(135deg, #7F1D1D 0%, #B91C1C 40%, #EAB308 100%);
+}
+
+body {
+  @apply bg-slate-50 text-slate-900;
+}
+
+/* Custom scrollbar for that industrial feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #B91C1C;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #991B1B;
+}
